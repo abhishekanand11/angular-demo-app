@@ -1,0 +1,14 @@
+<div *ngIf="hero">
+    <h2>{{ hero.name | uppercase }} Details</h2>
+    <ul class="heroes">
+      <li>
+        <a href="https://www.imdb.com/name/{{hero.imdbKey}}">
+          <span class="badge">{{hero.name}}</span>
+          <span class="aname">{{hero.actualName}}</span>
+        </a>
+      </li>
+        
+    </ul>
+    <button (click)="goBack()">go back</button>
+</div>
+
